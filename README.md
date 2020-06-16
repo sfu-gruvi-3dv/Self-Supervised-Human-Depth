@@ -26,7 +26,11 @@ pip install tensorflow==1.14
 ### Demo
 
 1. Download the pre-trained models
-
+```
+wget http://vault.sfu.ca/index.php/s/wZDseYefjvFPImZ/download && tar -xf download
+mv finetuned_hmr_model ./tracknet
+mv self_human_depth_model ./reconnet
+```
 2. predict base depth with finetuned hmr model
 ```
 cd ./tracknet
