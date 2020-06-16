@@ -4,7 +4,7 @@ Model for multiview optimization
 '''
 import argparse
 import glob
-import os
+import os, sys
 import random
 
 
@@ -14,6 +14,8 @@ import tensorflow as tf
 import copy
 from PIL import Image
 
+
+sys.path.append("./../.")
 import function.utils as func_utils
 import utils.utils as util
 from network.ReconNet_pred import ReconNetTrain
